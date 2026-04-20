@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #9face6;
+}
+
+/* MAIN BACKGROUND (LIGHT + GRADIENT) */
+.container {
+  height: 100vh;
+  background: linear-gradient(135deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SEARCH BAR */
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  border-radius: 30px;
+  padding: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* INPUT */
+.search input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #333;
+}
+
+.search input::placeholder {
+  color: #888;
+}
+
+/* BUTTON */
+.search button {
+  border: none;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search button:hover {
+  transform: scale(1.1);
+}
+
+/* CITY */
+.city {
+  font-size: 32px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* TEMPERATURE */
+.temp {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #222;
+}
+
+/* DESCRIPTION */
+.desc {
+  font-size: 20px;
+  color: #555;
+}
+
+/* FEELS LIKE */
+.range {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* CARD (GLASS EFFECT) */
+.card {
+  display: grid;                /* better than flex */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* CARD ITEMS */
+.card div {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.card div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.weather-box {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+  display: flex;
+  flex-direction: column;   /* ✅ THIS MAKES VERTICAL */
+  align-items: center;
+}
+.city, .temp, .desc, .range, .card {
+  width: 100%;
+  text-align: center;
+}
